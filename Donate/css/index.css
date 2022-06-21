@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    
+    border-top: 15px solid #6c757d;
+
+    position: relative;
+    top: -5px;
+    left: 80%;
+    z-index: -10;
+}
+
+
+.dw_p_progress_bar {
+    display: block;
+    background-color: #d35400;
+    height: 20px;
+    width: 80%;
+    border-radius: 1px;
+}
+
+.remaining-days {
+    font-weight: bold;
+    color: #bc89e4;
+    text-align: center;
+
+}
+
+.col-input-money {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+}
+.col-input-money:focus{
+    border: 1px solid #d8d8d8;
+}
+
+.div-input{
+    border: 1px solid #d8d8d8;
+    border-radius: 4px;
+}
+
+.col-input-money i {
+    width: 30%;
+    color: #b3b1b1;;
+    text-align: center;
+    font-style: normal;
+}
+
+.col-input-money input {
+    width: 70%;
+    height: 30px;
+    border: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.col-input-money input:focus {
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.col-widget {
+    border-radius: 4px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.btn-action{
+    font-size: 14px;
+    background-color: #f1eded;
+    outline: none;
+    border: 1xp solid #a1a1a1;
+    font-weight: bold;
+    color: #a1a1a1;
+    padding: 10px;
+}
+
+
+
+.bordered-div{
+    border-left: 1px solid #d8d8d8;
+    border-right: 1px solid #d8d8d8;
+    
+}
+
+.bordered-div-first{
+    border-top: 1px solid #d8d8d8;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid #d8d8d8;
+}
+
+.bordered-div-last{
+    border-bottom: 1px solid #d8d8d8;
+}
+
+
+
+.bordered-div-first .col-12{
+    padding-left: 0;
+}
+
+.bordered-div-first .col-12 span.dw_p_progress_bar{
+    border-bottom: 1px solid #a1a1a1;
+}
+.hidden{
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s linear 800ms, opacity 800ms;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+@media screen and (max-width: 480px) {
+    .widget{
+        max-width: 450px;
+    }
+    .row-actions .col-input-money div{
+        width: 100%;
+        padding: auto;
+        margin-bottom: 5px;
+    }
+
+    .row-buttons{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .col-save-later{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .col-tell-friends{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 5%;
+        color: red;
+    }
+}
+
+@media screen and (min-width: 481px) {
+    .widget{
+        max-width: 450px;
+    }
+    .row-actions .col-input-money div{
+        width: 100%;
+        padding: auto;
+        margin-bottom: 5px;
+    }
+
+    .row-buttons{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    .col-save-later{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 5%;
+    }
+
+    .col-tell-friends{
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 5%;
+    }
+}
