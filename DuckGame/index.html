@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2682606987915540"
+     crossorigin="anonymous"></script>
+  <title>Duck Hunt</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="../assets/Images/duckLogo.png" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+        
+            <!--
+              - #SIDEBAR
+            -->
+        
+                
+        
+            <button class="info_more-btn" data-sidebar-btn>
+              <span></span>
+    
+              <ion-icon name="chevron-down"></ion-icon>
+            </button>
+        
+
+        
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a class="navbar-link" href="../About">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a class="navbar-link" href="../#">Back</a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">World Of Ducks ~ Duck Hunt</h2>
+
+  
+        </header>
+
+        
+
+        <!--
+          - main
+        -->
+
+        <section class="main">
+
+          <div id="start-screen">
+            <button id="start-button">Start</button>
+          </div>
+          <div id="score-container">
+            <p>Score: <span id="score">0</span></p>
+          </div>
+          <div id="timer-container">
+            <p>Time left: <span id="time-left">60 seconds</span> </p>
+          </div>
+
+          <div id="game-container">
+            <div class="duck-container">
+              <img src="../assets/Images/duck-image.png" alt="A duck">
+            </div>
+
+
+          </div>
+          
+          <section id="end-screen"class="hidden">
+            <h2 class="h2 end-title">Game Over</h2>
+            <p>Your final score is <span id="final-score"></span></p>
+            <button id="restart-button">Play Again</button>
+          </section>
+
+
+        </section>
+           
+        
+ 
+            </div>
+        
+          </main>
+        
+        
+        
+        
+        
+        
+          <!--
+            - custom js link
+          -->
+          <script src="./script.js"></script>
+        
+          <!--
+            - ionicon link
+          -->
+          <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+          <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        
+        </body>
+        
+        </html>
+        
