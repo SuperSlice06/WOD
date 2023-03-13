@@ -36,7 +36,7 @@
   --background-Color: hsl(61, 80%, 66%);
   --smoky-black: hsla(61, 37%, 68%, 0.875);
   --white-1: hsl(0, 0%, 100%);
-  --hot-pink: hsl(330, 100%, 71%);
+  --light-blue: hsl(211, 100%, 69%);
   --light-gray: hsl(0, 33%, 97%);
   --main-purple: hsl(274, 63%, 72%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
@@ -117,11 +117,11 @@ input, textarea {
 }
 
 ::selection {
-  background: var(--hot-pink);
+  background: var(--light-blue);
   color: var(--smoky-black);
 }
 
-:focus { outline-color: var(--hot-pink); }
+:focus { outline-color: var(--light-blue); }
 
 html { font-family: var(--ff-poppins); }
 
@@ -162,7 +162,7 @@ article {
   justify-content: center;
   align-items: center;
   font-size: 16px;
-  color: var(--hot-pink);
+  color: var(--light-blue);
   box-shadow: var(--shadow-1);
   z-index: 1;
 }
@@ -297,7 +297,7 @@ main {
 .navbar-link:hover,
 .navbar-link:focus { color: var(--light-gray-70); }
 
-.navbar-link.active { color: var(--hot-pink); }
+.navbar-link.active { color: var(--light-blue); }
 
 
 
@@ -674,7 +674,7 @@ main {
   --scale: 0.8;
 
   background: var(--jet);
-  color: var(--hot-pink);
+  color: var(--light-blue);
   position: absolute;
   top: 50%;
   left: 50%;
