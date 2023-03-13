@@ -1,6 +1,3 @@
-'use strict';
-
-// Set up the game
 var score = 0;
 var duckContainer = document.querySelector(".duck-container");
 var scoreElement = document.querySelector("#score");
@@ -17,77 +14,77 @@ endScreen.classList.add('hidden');
 
 // Add a click event listener to the start button
 startButton.addEventListener("click", function() {
-startScreen.style.display = "none";
-gameContainer.style.display = "block";
-startGame();
+  startScreen.style.display = "none";
+  gameContainer.style.display = "block";
+  startGame();
 });
 
 // Start the game
 function startGame() {
-// Add a click event listener to the duck
-duckContainer.addEventListener("click", function() {
-score++;
-scoreElement.innerHTML = score;
-moveDuck();
-});
+  // Add a click event listener to the duck
+  duckContainer.addEventListener("click", function() {
+    score++;
+    scoreElement.innerHTML = score;
+    moveDuck();
+  });
 
-// Move the duck to a random position every 3 seconds
-var moveDuckInterval = setInterval(function() {
-moveDuck();
-}, 3000);
+  // Move the duck to a random position every 3 seconds
+  var moveDuckInterval = setInterval(function() {
+    moveDuck();
+  }, 3000);
 
-// Move the duck to a random position
-function moveDuck() {
-var x = Math.floor(Math.random() * (800 - 100)) + 1;
-var y = Math.floor(Math.random() * (600 - 100)) + 1;
-duckContainer.style.left = x + "px";
-duckContainer.style.top = y + "px";
-}
+  // Move the duck to a random position
+  function moveDuck() {
+    var x = Math.floor(Math.random() * (80 - 10)) + 1;
+    var y = Math.floor(Math.random() * (80 - 10)) + 1;
+    duckContainer.style.left = x + "%";
+    duckContainer.style.top = y + "%";
+  }
 
-// Start the timer
-var timerInterval = setInterval(function() {
-timeLeft--;
-timeLeftElement.innerHTML = timeLeft;
-if (timeLeft === 0) {
-endGame(score);
-}
-}, 1000);
+  // Start the timer
+  var timerInterval = setInterval(function() {
+    timeLeft--;
+    timeLeftElement.innerHTML = timeLeft;
+    if (timeLeft === 0) {
+      endGame(score);
+    }
+  }, 1000);
 
-// End the game when the timer reaches 0
-function endGame(score) {
-clearInterval(timerInterval);
-clearInterval(moveDuckInterval);
-duckContainer.removeEventListener("click", function() {
-score++;
-scoreElement.innerHTML = score;
-moveDuck();
-});
-finalScore.textContent = score;
-endScreen.classList.remove('hidden');
-}
+  // End the game when the timer reaches 0
+  function endGame(score) {
+    clearInterval(timerInterval);
+    clearInterval(moveDuckInterval);
+    duckContainer.removeEventListener("click", function() {
+      score++;
+      scoreElement.innerHTML = score;
+      moveDuck();
+    });
+    finalScore.textContent = score;
+    endScreen.classList.remove('hidden');
+  }
 }
 
 // When the player clicks the restart button, hide the end screen and restart the game
 restartButton.addEventListener('click', function() {
-endScreen.classList.add('hidden');
-restartGame();
+  endScreen.classList.add('hidden');
+  restartGame();
 });
 
 function restartGame() {
-// Reset score and time left
-score = 0;
-timeLeft = 60;
+  // Reset score and time left
+  score = 0;
+  timeLeft = 60;
 
-// Update score and time left display
-scoreElement.innerText = score;
-timeLeftElement.innerText = timeLeft + " seconds";
+  // Update score and time left display
+  scoreElement.innerText = score;
+  timeLeftElement.innerText = timeLeft + " seconds";
 
-// Reset duck position
-duckContainer.style.left = "0px";
-duckContainer.style.top = "0px";
+  // Reset duck position
+  duckContainer.style.left = "0%";
+  duckContainer.style.top = "0%";
 
-// Restart game
-startGame();
+  // Restart game
+  startGame();
 }
 
   
