@@ -271,7 +271,19 @@ main {
 
 
 
-
+.profile {
+  border-radius: 4px;
+  /*  top: 50%;
+    left: 50%;
+  transform: translate(69%, -42%);*/  
+  position: relative;
+  top: -28px;
+  margin-top: 60px;
+  max-width: 30px;
+      max-height: 30px;
+    cursor: pointer;
+  
+}
 
 
 
